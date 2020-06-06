@@ -32,7 +32,7 @@ jobs:
         echo test, and deploy your project.
 
     - name: Setup Node.js environment
-      uses: actions/setup-node@v1.4.2
+      uses: actions/setup-node@v2-beta
       with: 
         version: 12
     
@@ -47,5 +47,5 @@ jobs:
     - name: surge installation
       run: npm install -g surge
      
-    - name: surge deploymant
-      run: surge ./build http://callous-rice.surge.sh/ ./ --token${{secrets.SURGE_TOKEN}}
+    - name: surge deployment
+      run: surge ./build http://Bootcamp-assignment-second.surge.sh/  --token ${{secrets.SURGE_TOKEN}}
