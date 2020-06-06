@@ -48,4 +48,4 @@ jobs:
       run: npm install -g surge
      
     - name: surge deploymant
-      run: surge ./build http://BootCamp_Assignment_Secondclass.surge.sh/ --token${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://callous-rice.surge.sh/ ./ --token${{secrets.SURGE_TOKEN}}
